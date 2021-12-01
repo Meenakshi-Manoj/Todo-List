@@ -11,9 +11,7 @@ inputBox.onkeyup = ()=> {
         inputButton.classList.remove("active");
     }
 }
-
 addTasks();
-
 inputButton.onclick = ()=> {
     let typedData = inputBox.value;
     let getLocalStorage = localStorage.getItem("New Todo");
