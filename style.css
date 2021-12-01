@@ -1,54 +1,168 @@
 * {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 .main {
-    background: url("./images/bg-dark-desktop.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
+  background: url("./images/bg-dark-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
 }
 
 .main h2 {
-    color: aliceblue;
-    text-transform: uppercase;
-    font-family: 'Josefin Sans', sans-serif;
-    padding: 8vh 28vw;
-    letter-spacing: 11px;
-    font-size: xx-large;
+  color: aliceblue;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 8vh 28vw;
+  letter-spacing: 11px;
+  font-size: xx-large;
 }
 
 .heading {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .heading img {
-    height: 4vh;
-    margin-top: 0vh;
-    cursor: pointer;
+  height: 4vh;
+  margin-top: 0vh;
+  cursor: pointer;
 }
 
 .text {
-    height: 7vh;
-    margin-left: 28vw;
-    width: 40vw;
-    padding: 1vh 4vw;
-    font-family: 'Josefin Sans', sans-serif;
-    background-color: rgb(10, 10, 9);
-    color: #ffffff;
-    border: none;
-    font-size: large;
-    border-radius: 5px;
+  height: 6vh;
+  margin-left: 28vw;
+  width: 35vw;
+  padding: 1vh 4vw;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: rgb(10, 10, 9);
+  color: #ffffff;
+  border: none;
+  font-size: large;
+  border-radius: 5px;
+}
 
+.input-area {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-area button {
+  background-color: rgb(10, 10, 9);
+  margin-left: 0.4vw;
+  border: none;
+  border-radius: 2px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.input-area button.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.plus {
+  color: #ffffff;
+  font-size: xx-large;
+  padding: 0.3vh 0.3vw;
+  border-radius: 2px;
 }
 
 .text:active {
-    border: none;
-    box-shadow: none;
+  border: none;
+  box-shadow: none;
+}
+
+.box {
+  background-color: rgb(10, 10, 9);
+  margin-left: 28vw;
+  margin-right: 34vw;
+  border-radius: 10px;
+}
+
+.todolist {
+  background-color: rgb(10, 10, 9);
+  border-radius: 8px;
+  margin: 8vh 0vw;
+  padding: 5vh 7vw;
+  width: 38vw;
+}
+
+.todolist li {
+  margin-bottom: 17px;
+  /* background: #70163C; */
+  background-image: linear-gradient(
+    to right,
+    #4808ff,
+    #6f00fa,
+    #8a00f5,
+    #a005f0,
+    #b212eb
+  );
+  border-radius: 4px;
+  list-style-type: none;
+  padding: 1.5vh 1vw;
+  border-radius: 5px;
+  margin: 0vh -5vw 2vh -5vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.todolist li span {
+  position: absolute;
+  right: -45px;
+  font-size: xx-large;
+  background-color: blue;
+  top: 0px;
+  width: 3vw;
+  height: 7vh;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.todolist li:hover span {
+  right: 0px;
+}
+
+.todolist li span:hover {
+  color: red;
+}
+
+.footer {
+  padding: 0vh 8vw 2vh 8vw;
+  text-align: center;
+}
+
+.footer p {
+  margin-bottom: 1vh;
+}
+
+.footer button {
+  background: linear-gradient(to bottom, #f598dc 5%, #f0399b 100%);
+  background-color: #f598dc;
+  border-radius: 10px;
+  border: 1px solid #eb61c6;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Georgia;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 6px 35px;
+  text-decoration: none;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.footer button:hover {
+  background: linear-gradient(to bottom, #f0399b 5%, #f598dc 100%);
+  background-color: #f0399b;
+}
+.footer button.active {
+  opacity: 1;
+  pointer-events: auto;
 }
