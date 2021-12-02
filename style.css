@@ -4,12 +4,17 @@
   padding: 0px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .main {
   background: url("./images/bg-dark-desktop.svg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: fit-content;
 }
 
 .main h2 {
@@ -88,14 +93,17 @@
 .todolist {
   background-color: rgb(10, 10, 9);
   border-radius: 8px;
-  margin: 8vh 0vw;
+  margin: 8vh 0vw 0vh;
   padding: 5vh 7vw;
   width: 38vw;
 }
 
 .todolist li {
   margin-bottom: 17px;
-  /* background: #70163C; */
+  font-family: "Josefin Sans", sans-serif;
+  color: #ffffff;
+  text-transform: capitalize;
+  text-align: center;
   background-image: linear-gradient(
     to right,
     #4808ff,
@@ -140,7 +148,11 @@
 }
 
 .footer p {
-  margin-bottom: 1vh;
+  margin-bottom: 3vh;
+  margin-top: -5vh;
+  color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+
 }
 
 .footer button {
