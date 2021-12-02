@@ -9,7 +9,7 @@ inputBox.onkeyup = ()=>{
     if(userEnteredValue.trim() != 0){ 
       addBtn.classList.add("active");
     }else{
-      addBtn.classList.remove("active"); 
+      addBtn.classList.remove("active");
     }
   }
 
