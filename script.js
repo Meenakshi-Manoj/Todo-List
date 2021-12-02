@@ -1,36 +1,40 @@
-const inputBox = document.querySelector(".input-area .text");
-const inputButton = document.querySelector(".input-area button");
+const inputBox = document.querySelector(".input-area input");
+const addBtn = document.querySelector(".input-area button");
 const todoList = document.querySelector(".todolist")
 const clrbtn = document.querySelector(".footer button");
-inputBox.onkeyup = ()=> {
-    let typedData = inputBox.value;
-    if(typedData.trim != 0) {
-        inputButton.classList.add("active");
+
+
+inputBox.onkeyup = ()=>{
+    let userEnteredValue = inputBox.value; //getting user entered value
+    if(userEnteredValue.trim() != 0){ //if the user value isn't only spaces
+      addBtn.classList.add("active"); //active the add button
+    }else{
+      addBtn.classList.remove("active"); //unactive the add button
     }
-    else {
-        inputButton.classList.remove("active");
-    }
-}
+  }
+
 addTasks();
-inputButton.onclick = ()=> {
-    let typedData = inputBox.value;
-    let getLocalStorage = localStorage.getItem("New Todo");
-    if(getLocalStorage == null) {
+
+addBtn.onclick = ()=> {
+    let userEnteredValue = inputBox.value;  
+    let getLocalStorageData = localStorage.getItem("New Todo");
+    if(getLocalStorageData == null) {
         listArr = [];
     }else{
-        listArr = JSON.parse(getLocalStorage);
+        listArr = JSON.parse(getLocalStorageData);
     }
-    listArr.push(typedData);
+    listArr.push(userEnteredValue);
     localStorage.setItem("New Todo", JSON.stringify(listArr));
     addTasks();
+    addBtn.classList.remove("active");
 }
 
 function addTasks() {
-    let getLocalStorage = localStorage.getItem("New Todo");
-    if(getLocalStorage == null) {
+    let getLocalStorageData = localStorage.getItem("New Todo");
+    if(getLocalStorageData == null) {
         listArr = [];
     }else{
-        listArr = JSON.parse(getLocalStorage);
+        listArr = JSON.parse(getLocalStorageData);
     }
     const pending = document.querySelector(".pending");
     pending.textContent = listArr.length
@@ -49,15 +53,21 @@ function addTasks() {
 }
 
 function deleteTask(index) {
-    let getLocalStorage = localStorage.getItem("New Todo");
-    listArr = JSON.parse(getLocalStorage);
+    let getLocalStorageData = localStorage.getItem("New Todo");
+    listArr = JSON.parse(getLocalStorageData);
     listArr.splice(index, 1);
     localStorage.setItem("New Todo", JSON.stringify(listArr));
     addTasks();
 }
 
 clrbtn.onclick = ()=> {
+    let getLocalStorageData = localStorage.getItem("New Todo"); 
+  if(getLocalStorageData == null){ 
+    listArr = []; 
+  }else{
+    listArr = JSON.parse(getLocalStorageData);  
     listArr = [];
-    localStorage.setItem("New Todo", JSON.stringify(listArr));
-    addTasks();
+  }
+  localStorage.setItem("New Todo", JSON.stringify(listArr)); 
+  addTasks();
 }
