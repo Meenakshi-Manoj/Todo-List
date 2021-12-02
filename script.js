@@ -3,7 +3,6 @@ const addBtn = document.querySelector(".input-area button");
 const todoList = document.querySelector(".todolist")
 const clrbtn = document.querySelector(".footer button");
 
-
 inputBox.onkeyup = ()=>{
     let userEnteredValue = inputBox.value;
     if(userEnteredValue.trim() != 0){ 
