@@ -7,7 +7,7 @@ const clrbtn = document.querySelector(".footer button");
 inputBox.onkeyup = ()=>{
     let userEnteredValue = inputBox.value;
     if(userEnteredValue.trim() != 0){ 
-      addBtn.classList.add("active"); //active the add button
+      addBtn.classList.add("active");
     }else{
       addBtn.classList.remove("active"); //unactive the add button
     }
