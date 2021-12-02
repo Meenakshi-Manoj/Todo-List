@@ -5,7 +5,7 @@ const clrbtn = document.querySelector(".footer button");
 
 
 inputBox.onkeyup = ()=>{
-    let userEnteredValue = inputBox.value; //getting user entered value
+    let userEnteredValue = inputBox.value;
     if(userEnteredValue.trim() != 0){ //if the user value isn't only spaces
       addBtn.classList.add("active"); //active the add button
     }else{
