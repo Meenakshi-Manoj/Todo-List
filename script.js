@@ -3,12 +3,13 @@ const addBtn = document.querySelector(".input-area button");
 const todoList = document.querySelector(".todolist")
 const clrbtn = document.querySelector(".footer button");
 
+
 inputBox.onkeyup = ()=>{
-    let userEnteredValue = inputBox.value;
-    if(userEnteredValue.trim() != 0){ 
-      addBtn.classList.add("active");
+    let userEnteredValue = inputBox.value; //getting user entered value
+    if(userEnteredValue.trim() != 0){ //if the user value isn't only spaces
+      addBtn.classList.add("active"); //active the add button
     }else{
-      addBtn.classList.remove("active");
+      addBtn.classList.remove("active"); //unactive the add button
     }
   }
 
