@@ -222,6 +222,7 @@ body {
   .input-area input {
     margin-left: 7vw;
     width: 64vw;
+    height: 40px;
   }
 
   .input-area .btn {
