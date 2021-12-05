@@ -245,8 +245,7 @@ body {
   }
 
   .todolist li {
-    margin-left: 1vw;
-    margin-left: -5vw;
+    margin-left: -4vw;
     width: 85vw;
     text-align: center;
   }
