@@ -252,10 +252,6 @@ body {
     width: 85vw;
     text-align: center;
   }
-
-   .todolist li:hover {
-    text-decoration: line-through;
-  }
   
   .todolist li span {
     margin: 0.5vh 8vw;
