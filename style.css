@@ -148,6 +148,8 @@ body {
   );
 }
 
+
+
 .todolist li:hover span {
   right: 0px;
 }
@@ -251,6 +253,10 @@ body {
     text-align: center;
   }
 
+   .todolist li:hover {
+    text-decoration: line-through;
+  }
+  
   .todolist li span {
     margin: 0.5vh 8vw;
     right: -6px;
