@@ -212,7 +212,7 @@ body {
 
 @media only screen and (max-width: 600px) {
   .main {
-    background: url("./images/bg-mobile-dark.jpg");
+/*     background: url("./images/bg-mobile-dark.jpg"); */
     width: 100vw;
     background-repeat: no-repeat;
   }
