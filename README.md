@@ -4,8 +4,8 @@
 # A simple Todo App to schedule your tasks.
 ## Check it out!
 https://shehacks-todo-app.netlify.app/
-## Link to product walkthrough 
-> [Link](https://www.loom.com/share/c38954fcd6484c108301d5b8f1fa58c5)
+<!-- ## Link to product walkthrough 
+> [Link](https://www.loom.com/share/c38954fcd6484c108301d5b8f1fa58c5) -->
 ## Features
 * Responsive design
 * User can add items
