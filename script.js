@@ -44,7 +44,8 @@ function addTasks() {
   }
   let newLiTag = "";
   listArr.forEach((element, index) => {
-    newLiTag += `<li>${element}<span onclick="deleteTask(${index})"><i class="fas fa-times"></i></span></li>`;
+        newLiTag += `<li ><input type="checkbox" id="mark" style="height: 16px; margin-left: 5px;float: left; width: 17px;"/>${element}<span onclick="deleteTask(${index})"><i class="fas fa-times"></i></span></li>`;
+
   });
   todoList.innerHTML = newLiTag;
   inputBox.value = "";
