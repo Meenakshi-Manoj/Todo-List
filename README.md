@@ -2,16 +2,16 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/693cd849-1f88-40d9-98cd-c778ce44d966/deploy-status)](https://app.netlify.com/sites/shehacks-todo-app/deploys)
 
 # A simple Todo App to schedule your tasks.
-### Link to product walkthrough 
+## Link to product walkthrough 
 > [Link]()
-# Features
+## Features
 * Responsive Design
 * User can add items
 * User can delete items
 * User can mark items that are done
 * Data will be present even after refreshing page
 * Interactive
-# Screenshots
+## Screenshots
 ![Screenshot](./img/ss1.png)
 ![Screenshot](./img/ss2.png)
 ![Screenshot](./img/ss3.png)
