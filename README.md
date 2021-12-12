@@ -10,5 +10,9 @@
 * User can mark items that are done
 * Data will be present even after refreshing page
 * Interactive
-
+# Screenshots
+![Screenshot](./img/ss1.png)
+![Screenshot](./img/ss12.png)
+![Screenshot](./img/ss3.png)
+![Screenshot](./img/ss4.png)
 
