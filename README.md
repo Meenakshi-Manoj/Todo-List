@@ -6,7 +6,8 @@
 * Responsive Design
 * User can add items
 * User can delete items
+* User can mark items that are done
 * Data will be present even after refreshing page
 * Interactive
-<!-- * User can mark items that are done -->
+
 
