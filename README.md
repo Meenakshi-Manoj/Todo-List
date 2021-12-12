@@ -5,7 +5,7 @@
 ## Link to product walkthrough 
 > [Link]()
 ## Features
-* Responsive Design
+* Responsive design
 * User can add items
 * User can delete items
 * User can mark items that are done
