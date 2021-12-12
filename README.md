@@ -12,7 +12,7 @@
 * Interactive
 # Screenshots
 ![Screenshot](./img/ss1.png)
-![Screenshot](./img/ss12.png)
+![Screenshot](./img/ss2.png)
 ![Screenshot](./img/ss3.png)
 ![Screenshot](./img/ss4.png)
 
