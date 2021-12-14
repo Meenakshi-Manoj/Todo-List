@@ -8,7 +8,7 @@ body {
   overflow-x: hidden;
 }
 
-.main {
+.main { 
   background: url("./images/bg-dark-desktop.svg");
   background-size: cover;
   background-repeat: no-repeat;
